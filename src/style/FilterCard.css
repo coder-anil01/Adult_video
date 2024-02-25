@@ -1,0 +1,71 @@
+.f-main-container{
+    display: flex;
+}
+
+
+.f-button-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(64, 65, 65);
+margin: 5px 0 15px 0;
+}
+.f-button-title{
+width: 100%;
+padding: 5px;
+background-color: black;
+color: white;
+font-weight: 700;
+}
+.f-l-button{
+cursor: pointer;
+width: 150px;
+background: linear-gradient(to right,white, #FFD700, white);
+border: none;
+margin: 5px;
+height: 25px;
+font-weight: 700;
+font-size: 15px;
+border-radius: 10px;
+color: green;
+}
+
+
+.f-pre_next{
+margin: 20px 0 30px 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.f-pre_next-b{
+background: linear-gradient(to right,white, #FFD700, white);
+width: 140px;
+height: 40px;
+font-size: 18px;
+font-weight: 800;
+border: none;
+cursor: pointer;
+}
+.f-active-page{
+font-weight: 700;
+padding: 10px 20px;
+background-color: #FFD700;
+}
+
+@media only screen and (max-width: 920px){
+.f-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.f-left-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+.f-l-button{
+    width: 90%;
+    font-size: 12px;
+    padding: 5px;
+}
+}
